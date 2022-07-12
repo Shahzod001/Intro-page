@@ -5,6 +5,13 @@
 * Browsers: last 4 version
 */
 
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 /* inter-regular - latin */
 @font-face {
     font-family: 'Inter';
@@ -57,8 +64,8 @@
     padding-left: 25px;
     padding-right: 25px;
 }
-section{
-}
+/* section{
+} */
 .parent-box {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -97,8 +104,6 @@ section{
     border: 1px solid #FFFFFF;
     border-radius: 41px;
     margin-bottom: 60px;
-}
-.title-box {
 }
 .title-heading {
     font-weight: 700;
@@ -172,7 +177,6 @@ section{
     border-bottom: 1px solid #555;
     width: 450px;
     padding-bottom: 10px;
-    margin-bottom: 35px;
     outline: none;
     font-weight: 400;
     font-size: 16px;
@@ -187,15 +191,15 @@ section{
     line-height: 22px;
     color: #000000;
 }
-input:required:valid{
+/* input:valid{
     background: #fff;
     border-bottom-color: #28921f;
     color: #28921f;
     border-bottom: 4px solid green;
-}
+} */
 input:focus:invalid{
     background: #fff;
-    border-bottom: 4px solid red;
+    border-bottom: 1px solid red;
     color: #b03535;
     border-bottom-color: #b03535;
 } 
@@ -206,7 +210,6 @@ input:focus:invalid{
     border-bottom: 1px solid #555;
     width: 450px;
     padding-bottom: 10px;
-    margin-bottom: 35px;
     outline: none;
     font-weight: 400;
     font-size: 16px;
@@ -227,7 +230,6 @@ input:focus:invalid{
     border-bottom: 1px solid #555;
     width: 450px;
     padding-bottom: 10px;
-    margin-bottom: 35px;
     outline: none;
     font-weight: 400;
     font-size: 16px;
@@ -248,7 +250,6 @@ input:focus:invalid{
     border-bottom: 1px solid #555;
     width: 450px;
     padding-bottom: 10px;
-    margin-bottom: 63px;
     outline: none;
     font-weight: 400;
     font-size: 16px;
@@ -278,4 +279,21 @@ input:focus:invalid{
     font-size: 11px;
     line-height: 15px;
     color: #F03535;
+}
+.mini-box{
+    display: flex;
+    justify-content: end;
+    margin-bottom: 19px;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 16px;
+    text-align: right;    
+    color: #FF7979;
+    opacity: 0;
+}
+input{
+    margin-bottom: 9px;
+}
+input:not(:placeholder-shown):not(:focus):invalid~ .mini-box{
+    opacity: 1;
 }
